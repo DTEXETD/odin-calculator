@@ -12,6 +12,12 @@ const display = document.querySelector("#display")
 const op = document.querySelectorAll(".op")
 const equals = document.querySelector(".orange")
 const clear = document.querySelector(".clear")
+const dot = document.querySelector(".dot")
+
+dot.addEventListener("click", () => {
+    if (display.textContent.includes(".")) return
+    display.textContent += "."
+})
 
 clear.addEventListener("click", () => {
     fNum = 0
@@ -39,7 +45,7 @@ function displayFNum(operator) {
         display.textContent = "NUH UH"
     } else {
         fNum = operate(operators[operator], Number(fNum), Number(sNum))
-        fNum = Math.round(fNum * 10 ** 9) / 10 ** 9
+        fNum = Math.round(fNum * 10 ** 6) / 10 ** 6
         display.textContent = fNum
         if (fNum.toString().split("").length > 11) {
             display.textContent = "NaN"

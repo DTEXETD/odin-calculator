@@ -9,6 +9,7 @@
 }
 
 #display {
+    font-family: "Lucida Console", "Courier New", monospace;
     font-size: 48px;
     height: 70px;
     border-radius: 10px;
@@ -34,4 +35,10 @@ button {
 .orange {    
     background-color: #f89734;
     box-shadow: inset -3px -5px #df8338;
+}
+
+
+#zero {
+    margin-left: 0;
+    width: 100%;
 }
