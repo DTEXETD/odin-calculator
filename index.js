@@ -45,7 +45,7 @@ function displayFNum(operator) {
         display.textContent = "NUH UH"
     } else {
         fNum = operate(operators[operator], Number(fNum), Number(sNum))
-        fNum = Math.round(fNum * 10 ** 6) / 10 ** 6
+        fNum = Math.round(fNum * 10 ** 7) / 10 ** 7
         display.textContent = fNum
         if (fNum.toString().split("").length > 11) {
             display.textContent = "NaN"
@@ -62,7 +62,6 @@ for (let i = 0; i < op.length; i++) {
             } 
 
             if (sNum !== 0 && equalsClicked !== 1) {
-
                 displayFNum(operator)
             }
             operator = op[i].className.replace("op ","")
