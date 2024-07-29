@@ -25,6 +25,14 @@ body {
     vertical-align: bottom;
 }
 
+button.op:active, .clear:active {
+    background-color: #e3e4e5;
+}
+
+.orange:active {
+    background-color: #df8338;
+}
+
 button {
     margin: 6px;
     width: 70px;
@@ -37,6 +45,7 @@ button {
     border-width: 0px;
 }
 
+
 .orange {    
     background-color: #f89734;
     box-shadow: inset -3px -5px #df8338;
@@ -47,3 +56,4 @@ button {
     margin-left: 0;
     width: 100%;
 }
+

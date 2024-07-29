@@ -57,14 +57,14 @@ for (let i = 0; i < op.length; i++) {
     op[i].addEventListener("click", () => {
         if (onlyOnce == 0) {
             fNum = display.textContent
-            operator = op[i].className.replace("op ","")
+            operator = op[i].id
             onlyOnce++
             } 
 
             if (sNum !== 0 && equalsClicked !== 1) {
                 displayFNum(operator)
             }
-            operator = op[i].className.replace("op ","")
+            operator = op[i].id
             
             opClicked = 1
             firstClick = 1
